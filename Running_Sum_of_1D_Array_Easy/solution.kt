@@ -1,8 +1,5 @@
 class solution {
     fun runningSum(nums: IntArray): IntArray {
-        for (i in 1..nums.size - 1) {
-            nums[i] += nums[i - 1]
-        }
-        return nums
+        return nums.indices.map { nums.take(it + 1).sum() }.toIntArray()
     }
 }

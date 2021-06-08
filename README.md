@@ -1,2 +1,2 @@
 # <ins>Overview</ins>
-My accepted solutions to problems on LeetCode
+Accepted solutions to problems on LeetCode

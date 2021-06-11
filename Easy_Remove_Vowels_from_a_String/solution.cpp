@@ -1,7 +1,7 @@
 #include <string>
 
 class Solution {
- public:
+  public:
   std::string removeVowels(std::string s) {
     std::string result = "";
     for (std::string::iterator it = s.begin(); it < s.end(); it++) {

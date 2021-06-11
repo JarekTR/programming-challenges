@@ -4,8 +4,7 @@ class Solution {
  public:
   std::string removeVowels(std::string s) {
     std::string result = "";
-    std::string::iterator it;
-    for (it = s.begin(); it < s.end(); it++) {
+    for (std::string::iterator it = s.begin(); it < s.end(); it++) {
       switch (*it) {
         case 'a':
           break;

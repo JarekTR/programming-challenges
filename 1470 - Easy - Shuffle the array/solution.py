@@ -21,4 +21,4 @@ class Solution:
 # Solution using zip with a list comprehension.
 class Solution:
     def shuffle(self, nums: List[int], n: int) -> List[int]:
-        return [x for y in zip(nums[0:n], nums[n:]) for x in y]
+        return [y for x in zip(nums[0:n], nums[n:]) for y in x]

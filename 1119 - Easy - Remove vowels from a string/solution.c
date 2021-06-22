@@ -1,4 +1,4 @@
-char* removeVowels(char * s) {
+char* removeVowels(char *s) {
     int c = 0;
     int size = strlen(s);
     char *ret = malloc(size);

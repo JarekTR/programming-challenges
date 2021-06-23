@@ -1,4 +1,4 @@
-bool arrayStringsAreEqual(char ** word1, int word1Size, char ** word2, int word2Size) {
+bool arrayStringsAreEqual(char** word1, int word1Size, char** word2, int word2Size) {
     char* s1 = (char*) malloc(sizeof(char) * (strlen(word1[0]) + 1));
     char* s2 = (char*) malloc(sizeof(char) * (strlen(word2[0]) + 1));
     strcpy(s1, word1[0]);

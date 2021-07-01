@@ -1,25 +1,31 @@
-int convertRoman(char* s){
-    switch(*s) {
-        case 'I': 
-          return (s[1] == 'V' || s[1] == 'X') ? -1 : 1;
-        case 'X': 
-          return (s[1] == 'L' || s[1] == 'C') ? -10 : 10;
-        case 'C': 
-          return (s[1] == 'D' || s[1] == 'M') ? -100 : 100;
-        case 'V': 
-          return 5;
-        case 'L': 
-          return 50;
-        case 'D': 
-          return 500;
-        case 'M': 
-          return 1000;
+int romanToInt(char* s) {
+  int count = 0;
+  int temp = 0;
+  for (*s; *s != '\0'; s++) {
+    switch (*s) {
+      case 'I':
+        temp = (s[1] == 'V' || s[1] == 'X') ? -1 : 1;
+        break;
+      case 'X':
+        temp = (s[1] == 'L' || s[1] == 'C') ? -10 : 10;
+        break;
+      case 'C':
+        temp = (s[1] == 'D' || s[1] == 'M') ? -100 : 100;
+        break;
+      case 'V':
+        temp =  5;
+        break;
+      case 'L':
+        temp = 50;
+        break;
+      case 'D':
+        temp = 500;
+        break;
+      case 'M':
+        temp = 1000;
+        break;
     }
-    return 0;
-}
-
-int romanToInt(char * s){
-    int c = 0; 
-    for( ; *s != '\0'; s++) { c += convertRoman(s); }
-    return c;
+    count += temp;
+  }
+  return count;
 }

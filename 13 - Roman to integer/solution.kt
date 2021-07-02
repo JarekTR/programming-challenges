@@ -11,7 +11,7 @@ class solution {
                 'D' -> 500
                 'L' -> 50
                 'V' -> 5
-                else -> { 0 }
+                else -> 0
             }
             prev = s[i]
         }
